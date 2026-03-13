@@ -119,3 +119,5 @@ services:
     ports:
       - "3000"
       - "5001"
+    labels:
+      - jwt-signing-config=COOKIE:${COOKIE_SECRET}
